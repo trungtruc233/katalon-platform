@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>CM_Alarm.com</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Customer Login URL</description>
+      <initValue>'https://www.alarm.com/login.aspx'</initValue>
+      <name>CM_LoginPage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>ID Customer tpphho_iq2</description>
+      <initValue>'tpphho_iq2'</initValue>
+      <name>CM_iq2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>tpphho_iq2 's password</description>
+      <initValue>'9VbJ3BRDhQ5aopAGWoJzzw=='</initValue>
+      <name>CM_iq2_pass</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Setting URL</description>
+      <initValue>'https://www.alarm.com/web/Video/SettingsOverview_V2.aspx'</initValue>
+      <name>CM_Setting</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
