@@ -14,23 +14,18 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
+import internal.GlobalVariable
+
+import org.openqa.selenium.By
 import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Customer/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(GlobalVariable.CM_Setting)
 
-//Create a new object programmatically
-TestObject MyNewObject = new TestObject('ObjectID')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Settings  Alarm.com (Internal)/iframe_Settings  Alarm.com (Internal) has l_056185'), 
+    0)
 
-//Attributes
-// Add property to Test Object, a property is defined by:
-//property name,
-//property type,
-//property values,
-//a boolean value to indicate if the property will be used to identify the object during execution
-MyNewObject.setSelectorValue(SelectorMethod.Xpath, "//div[@id='ctl00_phBody_CamSelector_MainPanel']/div/select")
-
-MyNewObject.setselectorMethod(SelectorMethod.Xpath)
+WebUI.selectOptionByValue(findTestObject("//div[@id='ctl00_phBody_CamSelector_MainPanel']/div/select"), 
+    '2056', true)
 
